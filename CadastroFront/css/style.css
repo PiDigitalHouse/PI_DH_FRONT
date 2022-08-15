@@ -1,0 +1,118 @@
+/* Geral */
+
+/* Formatando as informações */
+*{
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border: none;
+
+    /* Alterando as posições e largura das linhas*/
+    }
+input,label{
+    display: block;
+    width: 100%;
+    }
+ 
+    /* Tirando a borda */
+    input, :focus{
+        outline: none;
+    }
+
+    /* Cor dos links*/
+    a{
+        color: rgb(52, 4, 196);;
+    }
+
+    /* Corpo do site, joga as informações pra baixo e adiciona a imagem*/
+body{
+    padding-top: 5vh;
+    background-image: url('../img/cao.perdido.jpg');
+    background-size: cover;
+    background-position-y: -150px;
+    }
+
+  
+    /* forma */
+
+    /* Formatando a caixa com as informações do novo usuario e movendo para o lado*/
+    #main-container{
+        width: 500px;
+        margin-left: auto;
+        margin-right: 130px;
+        background-color: aliceblue;
+        border-radius: 20px;
+        padding: 25px;
+    }
+
+    /* Formatando o titulo da caixa de usuario */
+    #main-container h1{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    /* Formatando as linhas e colunas da caixa de usuario*/
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    /* Ajustando tamanho caixa de usuario */
+    .full-box{
+        flex: 1 1 100%;
+        position: relative;
+    }
+
+    /* Espaçamento das colunas dentro caixa de usuario */
+    .half-box{
+        flex: 1 1 45%;
+        position: relative;
+     }
+
+     /* Ajuste do espaçamento das colunas dentro caixa de usuario */
+     .spacing{
+        margin-right: 3%;
+     }
+
+    /* Fonte */
+    label{
+        font-weight: bold;
+        font-size: .8rem;
+     }
+
+    /* Quando você está na linha d edição ela fica de outra cor, editor de linha */
+     input{
+        border-bottom: 2px solid #090909;
+        padding: 10px;
+        font-size: .9rem;
+        margin-bottom: 10px;
+     }
+     
+     /* Criando o botão do "Registre" */
+     input[type="submit"]{
+        background-color: rgb(2, 147, 147);
+        color: rgb(5, 5, 5);
+        border: none;
+        border-radius: 10px;
+        height: 40px;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    /* Espaçamento do check-box */
+    #agreement{
+        margin-right: 5px;
+    }
+
+    /* Alinhando check-box com termo de uso */
+    #agreement, #agreement-label{
+    display: inline-block;
+    width: auto;
+    }
+
+     
+    
+    

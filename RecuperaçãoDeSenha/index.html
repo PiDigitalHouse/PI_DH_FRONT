@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de senha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1> Selecione o modo de recuperação de senha</h1>
+        <form id="Recuperação-form">
+            <div class="Half-box">
+             <input type="submit" id="Email-submit" value="Email">
+            </div>
+            <div class="Half-box1">
+                <input type="submit" id="Sms-submit" value="Mensagem">              
+               <form id="regitser-form"></div>
+                <div class="half-box spacing">
+                    <label for="name"></label>
+                    <input type="email" name="name" id="name" placeholder="Preencha seu email">
+                </div>   
+                <div class="half-box spacing">
+                    <label for="name"></label>
+                    <input type="tel" name="tel" id="tel" placeholder="Preencha seu número de telefone com DDD">
+                </div>    
+                 <div class="half-box">
+            <input type="submit" id="Enviar" value="Enviar">
+           </div>
+        </form>    
+    </div>
+</body>
+<!-- Faz o botão selecionar a opção valida -->
+<script type="text/javascript">
+    var button = document.getElementById("Sms-submit");
+    button.onclick = function() { 
+        document.getElementById('name').style.display ="none";
+        document.getElementById('tel').style.display ="block";    
+    };
+
+    var button = document.getElementById("Email-submit");
+    button.onclick = function() { 
+        document.getElementById('name').style.display ="block";
+        document.getElementById('tel').style.display ="none";    
+    };
+</script>
+
+</html>

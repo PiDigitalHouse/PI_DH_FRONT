@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+}
+
+.header{
+    width: 100%;
+    position: static;
+    font-family: Montserrat;
+    opacity: 1;
+}
+
+.Titulo{
+    color: #1B62BF;
+    font-weight: Bolder;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.Subtitulo{
+    color: #F2441D;
+    margin-top: 10px;
+    padding-top: -10px;
+    font-weight: 1;
+    text-align: center;
+}
+
+.Foto{
+    position: relative;
+    width: 35%;
+    left: 10%;
+    box-shadow: 3px 1px 2px lightgray;
+
+}
+
+p{
+    font-family: Montserrat;
+    position: absolute;
+    left: 150px;
+    margin: 0px;
+}
+
+.Formulario{
+    position: absolute;
+    left: 50%;
+    top: 23%;
+    margin: 0%;
+    color: #909497;
+
+}
+
+input{
+    font-family: Montserrat;
+    font-size: 120%;
+    padding-left: 5%;
+}
+
+.NomePet{
+    height: 45px;
+    width: 550px;
+
+}
+
+.Endereco{
+    height: 45px;
+    width: 550px;
+    position: relative;
+    top: 20px;
+}
+
+.TipoPet{
+    font-family: Montserrat;
+    font-size: 120%;
+    padding-left: 5%;
+    height: 45px;
+    width: 270px;
+    position: relative;
+    top: 40px;
+    color: #909497;
+}
+
+.Telefone{
+    height: 45px;
+    width: 270px;
+    position: relative;
+    top: 40px;
+    left: 10px;
+}
+
+.Imagem{
+    height: 45px;
+    width: 550px;
+    position: relative;
+    top: 60px;
+}
+
+.NomeTutor{
+    height: 45px;
+    width: 550px;
+    position: relative;
+    top: 80px;
+}
+
+.Informacoes{
+    height: 45px;
+    width: 550px;
+    position: relative;
+    top: 100px;
+}
+
+button{
+    height: 100%;
+    position: relative;
+    top: 120px;
+    font-size: 25px;
+}
+
+.Enviar{
+    background-color: #4EA4D9;
+    color: white;
+}
+
+.Cadastro{
+    background-color: #FFDF00;
+    left: 13%;
+    color: darkgray;
+}
+
+

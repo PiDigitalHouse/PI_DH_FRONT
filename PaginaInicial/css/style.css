@@ -1,0 +1,282 @@
+* {
+    color: #1f1f1f;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 10px;
+}
+
+.botao {
+    font-size: 24px;
+    padding: 10px 50px;
+    background-color: #4ea3d9;
+    color: #F0F0F0;
+    border: 0;
+    border-radius: 4px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    /*os ítens são distribuídos de forma igual ao longo da linha; o primeiro ítem junto à borda inicial da linha, o último junto à borda final da linha.*/
+    align-items: center;
+    /*ítens são centralizados no eixo transversal.*/
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.cabecalho .barra-navegacao {
+    font-size: 24px;
+}
+
+.cabecalho .barra-navegacao img {
+    width: 50px;
+}
+
+.cabecalho .barra-navegacao a {
+    margin: 10px;
+}
+
+.cabecalho .barra-navegacao a:hover {
+    color: #4ea3d9;
+}
+
+.cabecalho .botao:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.achei-perdi-pet .card {
+    flex-direction: column;
+    width: 500px;
+    margin-left: 150px;
+    height: 350px;
+    align-items: center;
+    font-size: 40px;
+    background-color: rgba(222, 222, 222, .75);
+
+}
+
+.achei-perdi-pet .card .botao {
+    margin: 30px;
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    width: 300px;
+    text-align: center;
+}
+
+.achei-perdi-pet .card .botao:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.achei-perdi-pet .card h1 {
+    font-weight: 900;
+    margin: 20px;
+}
+
+.achei-perdi-pet .carousel-inner {
+    height: 900px;
+    position: absolute;
+}
+
+.como-funciona {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4ea3d9;
+    padding-top: 300px;
+    padding-bottom: 30px;
+}
+
+.como-funciona h1 {
+    font-weight: 900;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.como-funciona h2 {
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.pets-perdidos {
+    padding: 30px;
+    text-align: center;
+}
+
+.pets-perdidos h1 {
+    font-weight: 900;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.pets-perdidos .carrossel-imagens {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.pets-perdidos .carrossel-imagens img {
+    width: 600px;
+    margin-bottom: 30px;
+}
+
+
+.quem-somos {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4ea3d9;
+    padding: 30px;
+}
+
+.quem-somos h1 {
+    font-weight: 900;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.quem-somos h2 {
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.quem-somos h3 {
+    margin: 10px;
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+.pets-encontrados {
+    padding: 30px;
+    text-align: center;
+}
+
+.pets-encontrados h1 {
+    font-weight: 900;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.pets-encontrados .carrossel-imagens {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.pets-encontrados .carrossel-imagens img {
+    width: 350px;
+}
+
+.amplie-nossa-rede {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+
+.amplie-nossa-rede img {
+    max-width: 800px;
+}
+
+.amplie-nossa-rede .cadastro-email {
+    font-weight: 900;
+    font-size: 40px;
+    margin: 10px;
+    background-color: rgb(242, 69, 29, 0.9);
+    padding: 100px 80px;
+    border-radius: 40px;
+}
+
+.amplie-nossa-rede h2 {
+    font-size: 24px;
+    color: #F0F0F0;
+}
+
+.amplie-nossa-rede .cadastro-email h1 {
+    color: #F0F0F0;
+}
+
+.amplie-nossa-rede .cadastro-email p {
+    color: #F0F0F0;
+}
+
+.nav .navbar {
+    padding: none;
+    width: 700px;
+}
+
+.mais-informacoes{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
+.mais-informacoes .texto h1{
+    font-weight: 900;
+    font-size: 30px;
+
+}
+.mais-informacoes .quem-somos-footer{
+    width: 300px;
+    padding: 10px;
+}
+.mais-informacoes .quem-somos-footer a {
+    display: block;
+}
+.mais-informacoes .quem-somos-footer a:hover {
+    color: #4ea3d9;
+}
+.mais-informacoes .quem-somos-footer h1 {
+    font-size: 24px;
+}
+.mais-informacoes .como-funciona-footer{
+    width: 400px;
+}
+.mais-informacoes .como-funciona-footer a {
+    display: block;
+}
+.mais-informacoes .como-funciona-footer a:hover {
+    color: #4ea3d9;
+}
+.mais-informacoes .como-funciona-footer h1 {
+    font-size: 24px;
+}
+
+.mais-informacoes .botoes .botao{
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
+}
+.mais-informacoes .botoes .botao-login{
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #a7a7a7;
+    color: #F0F0F0;
+    border: 0;
+    border-radius: 4px;
+}
+
+   

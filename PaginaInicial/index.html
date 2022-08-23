@@ -5,28 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lost Pet-Buscador de pets perdidos</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
+    <div class="cabecalho">
         <div class="barra-navegacao">
-            <a href="#">Achados e Perdidos</a>
-            <a href="#">Como Funciona</a>
-            <a href="#">Suporte</a>
+            <img src="./img/icon.png">
+            <a class="navbar-brand" href="#">Achados e Perdidos</a>
+            <a class="navbar-brand" href="#">Como Funciona</a>
+            <a class="navbar-brand" href="#">Suporte</a>
         </div>
         <div>
-            <button>Login</button>
+            <button class="botao">Login</button>
         </div>
-    </header>
+    </div>
     <main>
         <div class="achei-perdi-pet">
-            <div class="achei-perdi-pet botoes">
-                <button>Perdi meu Pet!</button>
-                <button>Achei um Pet!</button>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/banner1.png" class="d-block w-100" alt="banner 1">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./img/banner1.png" class="d-block w-100" alt="banner 1">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./img/banner1.png" class="d-block w-100" alt="banner 1">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
             </div>
-            <div class="banner">
-                <img src="#">
+            <div class="card">
+                <h1>Pet Perdido?</h1>
+                <a href="#" class="botao">Perdi meu Pet!</a>
+                <a href="#" class="botao">Achei um Pet!</a>
             </div>
         </div>
         <div class="como-funciona">
@@ -42,7 +72,12 @@
             <h1>
                 Você me viu por aí? Avise meu dono!!
             </h1>
-            <div class="pets-perdidos carrossel-banner"></div>
+            <div class="carrossel-imagens">
+                <img src="./img/petperdido2.png" alt="video relato pet encontrado">
+                <img src="./img/petperdido3.png" alt="video relato pet encontrado">
+                <img src="./img/petperdido4.png" alt="video relato pet encontrado">
+                <img src="./img/petperdido5.png" alt="video relato pet encontrado">
+            </div>
         </div>
         <div class="quem-somos">
             <h1>
@@ -61,7 +96,12 @@
         </div>
         <div class="pets-encontrados">
             <h1>Pets Encontrados!</h1>
-            <div class="pets-encontrados carrossel-banner"></div>
+            <div class="carrossel-imagens">
+                <img src="./img/petencontrado2.png" alt="video relato pet encontrado">
+                <img src="./img/petencontrado3.png" alt="video relato pet encontrado">
+                <img src="./img/petencontrado4.png" alt="video relato pet encontrado">
+                <img src="./img/petencontrado5.png" alt="video relato pet encontrado">
+            </div>
         </div>
         <div class="amplie-nossa-rede">
             <div class="cadastro-email">
@@ -69,32 +109,39 @@
                 <h2>O Chicão fugiu, pode nos ajudar?
                     <p>Registre seu e-mail para ver os pets perdidos na região:</p>
                 </h2>
-                <div class="submeter-email"></div>
+                <nav class="navbar">
+                    <form class="container-fluid">
+                      <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">nome@email.com</span>
+                        <input type="text" class="form-control" placeholder="Digite seu e-mail" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    </form>
+                  </nav>
             </div>
-            <img src="#">
+            <img src="./img/muitos-gatos.png">
         </div>
         <div class="mais-informacoes">
-            <div>
+            <div class="texto">
                 <h1>Se você tem alguma dúvida ou deseja mais informações sobre
                     o Lost Pet, entre em contato conosco.</h1>
             </div>
-            <div class="quem-somos">
+            <div class="quem-somos-footer">
                 <h1>
                     Quem somos
                 </h1>
-                <a href="#">O serviço</a>
-                <a href="#">FAQ</a>
+                <a class="navbar-brand" href="#">O serviço</a>
+                <a class="navbar-brand" href="#">FAQ</a>
             </div>
-            <div class="como-funciona">
+            <div class="como-funciona-footer">
                 <h1>
                     Como Funciona
                 </h1>
-                <a href="#">Meu pet desapareceu</a>
-                <a href="#">Contato</a>
+                <a class="navbar-brand" href="#">Meu pet desapareceu</a>
+                <a class="navbar-brand" href="#">Contato</a>
             </div>
             <div class="botoes">
-                <button>Cadastre-se</button>
-                <button>Login</button>
+                <button class="botao">Cadastre-se</button>
+                <button class="botao-login">Login</button>
             </div>
         </div>
     </main>

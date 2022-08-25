@@ -1,0 +1,214 @@
+* {
+    color: #1f1f1f;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 10;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.centralizar-conteudo {
+    display: inline-grid;
+    place-content: center;
+}
+
+.caixa {
+    width: 100%;
+    height: 100%;
+}
+
+.pagina-principal {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas:
+        "cabecalho cabecalho"
+        "pesquisa pesquisa"
+        "barra-lateral conteudo-principal"
+        "rodape rodape";
+}
+
+
+
+
+.botao {
+    font-size: 16px;
+    padding: 8px 30px;
+    background-color: #4ea3d9;
+    color: #F0F0F0;
+    border: 0;
+    border-radius: 4px;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.cabecalho .barra-navegacao {
+    font-size: 16px;
+}
+
+.cabecalho .barra-navegacao img {
+    width: 50px;
+}
+
+.cabecalho .barra-navegacao a {
+    margin: 10px;
+}
+
+.cabecalho .barra-navegacao a:hover {
+    color: #4ea3d9;
+}
+
+.cabecalho .botao:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cabecalho .barra-pesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+.btn {
+    height: 38px;
+
+}
+
+.pesquisa {
+    grid-area: pesquisa;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url("/img/Banner.png");
+    background-color: #cccccc;
+    background-size: cover;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: scroll;
+    min-height: 100px;
+}
+
+.pesquisa .botao {
+    margin: 10px;
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+}
+
+.pesquisa .botao:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #F0F0F0;
+}
+
+.pesquisa h1 {
+    font-weight: bold;
+    margin: 10px;
+    font-size: 24px;
+}
+
+
+.barra-lateral {
+    background: #4ea3d9;
+    grid-area: barra-lateral;
+    place-content: flex-start;
+    padding: 10px;
+}
+.barra-lateral .barra-pesquisa{
+    margin-bottom: 20px;
+}
+.barra-lateral h2{
+    font-size: 14px;
+}
+.barra-lateral a:hover {
+    color: #F0F0F0;
+}
+
+
+input {
+    border: none;
+    border-bottom: 2px solid rgb(109, 109, 109);
+    background: none;
+    margin: 20px;
+}
+
+.conteudo-principal {
+    background: #ffffff;
+    grid-area: conteudo-principal;
+}
+
+.conteudo-principal {
+    padding: 30px;
+    text-align: center;
+}
+
+.conteudo-principal h1 {
+    font-weight: 900;
+    font-size: 34px;
+    margin: 10px;
+}
+
+.conteudo-principal .carrossel-imagens {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.conteudo-principal .carrossel-imagens img {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+
+
+.rodape {
+    background: #4ea3d9;
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rodape h3 {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.rodape .texto-rodape {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}

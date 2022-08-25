@@ -34,13 +34,15 @@
 <!-- Faz o botão selecionar a opção valida -->
 <script type="text/javascript">
     var button = document.getElementById("Sms-submit");
-    button.onclick = function() { 
+    button.onclick = function(e) { 
+        e.preventDefault();
         document.getElementById('name').style.display ="none";
         document.getElementById('tel').style.display ="block";    
     };
 
     var button = document.getElementById("Email-submit");
-    button.onclick = function() { 
+    button.onclick = function(e) { 
+        e.preventDefault();
         document.getElementById('name').style.display ="block";
         document.getElementById('tel').style.display ="none";    
     };

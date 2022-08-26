@@ -10,7 +10,6 @@ body {
     padding: 10;
     margin: 0;
 }
-
 ul {
     list-style: none;
     padding-left: 0;
@@ -25,7 +24,7 @@ li {
 
 .centralizar-conteudo {
     display: inline-grid;
-    place-content: center;
+    padding: 20px;
 }
 
 .caixa {
@@ -55,7 +54,22 @@ li {
     border: 0;
     border-radius: 4px;
 }
-
+.botao-disabled{
+    font-size: 16px;
+    padding: 8px 30px;
+    background-color: #7e7e7e;
+    color: #F0F0F0;
+    border: 0;
+    border-radius: 4px;
+}
+.botao-alert{
+    font-size: 16px;
+    padding: 8px 30px;
+    background-color: #ec4d1c;
+    color: #0f0f0f;
+    border: 0;
+    border-radius: 4px;
+}
 .cabecalho {
     grid-area: cabecalho;
     display: flex;
@@ -84,12 +98,38 @@ li {
 .cabecalho .botao:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.cabecalho .barra-pesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho .usuario-barra{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.cabecalho .usuario-barra img {
+    width: 50px;
+}
+.cabecalho .usuario-barra h1{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+.btn {
+    height: 38px;
+
+}
 
 .pesquisa {
     grid-area: pesquisa;
     display: flex;
     justify-content: flex-start;
-    background-image: url("/img/Banner.png");
+    background-image: url("/PaginaUsuario/img/Banner.png");
     background-color: #cccccc;
     background-size:cover;
     align-items: center;
@@ -126,7 +166,8 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: flex-start;
+    padding-right: 20px;
 }
 
 .barra-lateral .usuario {
@@ -152,19 +193,75 @@ li {
     margin-top: 20px;
 }
 
-.barra-lateral
+
 .conteudo-principal {
     background: #ffffff;
     grid-area: conteudo-principal;
-
+    margin: 10px;
+}
+.conteudo-principal .usuario{
+    display: flex;
+    justify-content: space-between;
+}
+.conteudo-principal .usuario h1{
+    font-size: 20px;
+    font-weight: bold;
 }
 
+.barra-lateral .selecionado{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.conteudo-principal .pets-usuario{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.conteudo-principal .pets-usuario .conteudo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    background-color:#4ea4d9bb;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.conteudo-principal .pets-usuario .conteudo .informacoes{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.conteudo-principal .pets-usuario .conteudo .informacoes img{
+    border-radius: 50%;
+    max-width: 150px;
+    padding: 10px;
+}
+.conteudo-principal .pets-usuario .conteudo .informacoes h1{
+    font-size: 24px;
+}
+.conteudo-principal .pets-usuario .botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+.conteudo-principal .pets-usuario .botoes .botao-alert , .botao-disabled{
+    margin-bottom: 10px ;
+}
+
+.conteudo-principal .pets-usuario .botoes .botao-alert:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .rodape {
     background: #4ea3d9;
     grid-area: rodape;
     display: flex;
     justify-content: space-between;
-
 }
 
 .rodape h3 {

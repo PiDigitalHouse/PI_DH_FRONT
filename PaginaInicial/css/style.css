@@ -8,26 +8,24 @@ body {
 }
 
 .botao {
-    font-size: 24px;
-    padding: 10px 50px;
+    font-size: 16px;
+    padding: 8px 30px;
     background-color: #4ea3d9;
     color: #F0F0F0;
     border: 0;
     border-radius: 4px;
+    height: 38px;
+    margin-left: 10px;
 }
 
 .cabecalho {
+    grid-area: cabecalho;
     display: flex;
     justify-content: space-between;
-    /*os ítens são distribuídos de forma igual ao longo da linha; o primeiro ítem junto à borda inicial da linha, o último junto à borda final da linha.*/
+    align-content: center;
     align-items: center;
-    /*ítens são centralizados no eixo transversal.*/
     padding: 10px;
     margin-right: 50px;
-}
-
-.cabecalho .barra-navegacao {
-    font-size: 24px;
 }
 
 .cabecalho .barra-navegacao img {
@@ -46,6 +44,25 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.cabecalho .barra-pesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho .barra-pesquisa-nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+.btn {
+    height: 38px;
+}
 .achei-perdi-pet {
     position: relative;
 }

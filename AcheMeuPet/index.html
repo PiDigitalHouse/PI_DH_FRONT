@@ -27,7 +27,7 @@
         <section class="Formulario">
             <form action="">
                 <input class="NomePet" type="Name" name="NomePet" placeholder="Nome do Pet" autocomplete="off">
-                <input class="Endereco" type="Name" name="Endereco" placeholder="Endereço em que foi visto por último" autocomplete="off">
+                <input class="NomeTutor" type="Name" name="NomeTutor" placeholder="Nome do Tutor" autocomplete="off">
                 <select class="TipoPet" name="Tipo">
                     <option selected disabled>Tipo de Pet</option>
                     <option value="Cachorro">Cachorro</option>
@@ -39,15 +39,18 @@
                     <option value="Porco">Porco</option>
                 </select>
                 <input class="Raca" type="text" name="Raca" placeholder="Qual a raça? (Opcional)" autocomplete="off">
-                <input class="Telefone" type="tel" name="Telefone" placeholder="Telefone para contato" autocomplete="off">
                 <input class="Email" type="email" name="Email" placeholder="Digite seu e-mail" autocomplete="off">
-                <input class="Imagem" type="url" name="Imagem" placeholder="Faça upload de uma foto" autocomplete="off">
-                <input class="NomeTutor" type="Name" name="NomeTutor" placeholder="Nome do Tutor" autocomplete="off">
+                <input class="Telefone" type="tel" name="Telefone" placeholder="Telefone para contato" autocomplete="off">
+                <div>
+                    <label for="Imagem">Escolher Imagem do Pet</label>
+                    <input class="Imagem" accept="image/*" type="file" name="Imagem" id="Imagem">
+                </div>
+                <input class="Endereco" type="Name" name="Endereco" placeholder="Endereço em que foi visto por último" autocomplete="off">
                 <input class="Informacoes" type="text" name="Informacoes" placeholder="Informações Adicionais" autocomplete="off">
             </form>
 
             <button class="Enviar" type="button">Enviar Busca</button> 
-            <button class="Cadastro" type="button">Meu Pet já possui cadastro</button> 
+            <button class="Cadastro" type="button">Já possuo cadastro</button> 
         </section>
     </main>
     <section class="Dicas">

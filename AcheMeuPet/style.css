@@ -28,7 +28,7 @@ body {
 }
 
 .Subtitulo{
-    color: #F2441D;
+    color: black;
     margin-top: 10px;
     padding-top: -10px;
     font-weight: 1;
@@ -37,12 +37,13 @@ body {
 
 .Foto{
     box-shadow: 3px 1px 2px lightgray;
-    max-width: 600px;
+    max-width: 430px;
 }
 
 p{
     left: 150px;
     margin: 0px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -61,86 +62,120 @@ input{
 
 .NomePet{
     height: 45px;
-    width: 550px;
-
+    width: 275px;
 }
 
-.Endereco{
+.NomeTutor{
     height: 45px;
-    width: 550px;
+    width: 275px;
     position: relative;
-    top: 20px;
+    top: -45px;
+    left: 280px;
 }
 
 .TipoPet{
     height: 45px;
-    width: 550px;
+    width: 275px;
     font-size: 120%;
     padding-left: 5%;
     position: relative;
-    top: 40px;
+    top: -20px;
     color: #909497;
 }
 
 .Raca{
     height: 45px;
-    width: 550px;
+    width: 275px;
     position: relative;
-    top: 60px;
-}
-
-.Telefone{
-    height: 45px;
-    width: 550px;
-    position: relative;
-    top: 80px;
+    top: -65px;
+    left: 280px;
 }
 
 .Email{
     height: 45px;
     width: 550px;
     position: relative;
-    top: 100px;
+    top: -40px;
+    
 }
 
-.Imagem{
+.Telefone{
+    height: 45px;
+    width: 275px;
+    position: relative;
+    top: -20px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label{
+    font-size: 15px;
+    color: black;
+    background-color: lightgray;
+    padding: 13px 15px;
+    position: relative;
+    top: -53px;
+    left: 300px;
+    box-shadow: 3px 1px 2px lightgray;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+label:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.Endereco{
     height: 45px;
     width: 550px;
     position: relative;
-    top: 120px;
-}
-
-.NomeTutor{
-    height: 45px;
-    width: 550px;
-    position: relative;
-    top: 140px;
+    top: -20px;
 }
 
 .Informacoes{
-    height: 45px;
+    height: 90px;
     width: 550px;
     position: relative;
-    top: 160px;
+    top: -5px;
+    text-align: left;
+    align-self: flex-start;
 }
 
 button{
     height: 10%;
     position: relative;
-    top: 180px;
+    top: 15px;
+    border: 0;
+    cursor: pointer;
 }
+
+button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 
 .Enviar{
     background-color: #4EA4D9;
     color: white;
-    font-size: 25px;
+    font-size: 19px;
+    height: 50px;
+    box-shadow: 3px 1px 2px lightgray;
+    left: 100px;
+    border-radius: 4px;
 }
 
 .Cadastro{
-    background-color: #FFDF00;
+    background-color: lightgray;
     left: 13%;
-    color: darkgray;
-    font-size: 22px;
+    font-size: 18px;
+    height: 50px;
+    left: 120px;
+    box-shadow: 3px 1px 2px gray;
+    border-radius: 4px;
 }
 
 .tituloDicas{
@@ -184,13 +219,12 @@ button{
     .tituloDicas{
         text-align: center;
         position: relative;
-        top:185px;
     }
 
     .containerDicas{
         display: block;
         position: relative;
-        top: 165px;
+        top: 30px;
     }
 
     .imagemDica{

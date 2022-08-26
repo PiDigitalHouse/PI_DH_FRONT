@@ -11,6 +11,23 @@
 </head>
 
 <body>
+    <nav class="navegador">
+        <div class="barra-navegacao">
+            <img src="./Imagens/icon.png">
+            <a id="achadosEPerdidos" href="#">Achados e Perdidos</a>
+            <a id="comoFunciona" href="#">Como Funciona</a>
+            <a id="suporte" href="#">Suporte</a>
+        </div>
+
+        <div class="barra-pesquisa-nav">
+            <div>
+                <form class="barra-pesquisa">
+                    <input class="form-control" type="search" placeholder="Pesquisa Pet" aria-label="Search">
+                    <button class="btn" type="submit">Procurar</button>
+                </form>
+            </div>   
+    </nav>
+
     <header class="header">
         <h1 class="Titulo">ACHE MEU PET</h1>
         <h2 class="Subtitulo">Você recuperará seu amiguinho bem rápido! Coloque todas as informações solicitadas e não
@@ -18,7 +35,6 @@
     </header>
 
     <main class="Main">
-
         <div>
             <img class="Foto" src="Imagens/anuncio.png">
             <p>Prévia do anúncio</p>
@@ -40,17 +56,20 @@
                 </select>
                 <input class="Raca" type="text" name="Raca" placeholder="Qual a raça? (Opcional)" autocomplete="off">
                 <input class="Email" type="email" name="Email" placeholder="Digite seu e-mail" autocomplete="off">
-                <input class="Telefone" type="tel" name="Telefone" placeholder="Telefone para contato" autocomplete="off">
+                <input class="Telefone" type="tel" name="Telefone" placeholder="Telefone para contato"
+                    autocomplete="off">
                 <div>
                     <label for="Imagem">Escolher Imagem do Pet</label>
                     <input class="Imagem" accept="image/*" type="file" name="Imagem" id="Imagem">
                 </div>
-                <input class="Endereco" type="Name" name="Endereco" placeholder="Endereço em que foi visto por último" autocomplete="off">
-                <input class="Informacoes" type="text" name="Informacoes" placeholder="Informações Adicionais" autocomplete="off">
+                <input class="Endereco" type="Name" name="Endereco" placeholder="Endereço em que foi visto por último"
+                    autocomplete="off">
+                <input class="Informacoes" type="text" name="Informacoes" placeholder="Informações Adicionais"
+                    autocomplete="off">
             </form>
 
-            <button class="Enviar" type="button">Enviar Busca</button> 
-            <button class="Cadastro" type="button">Já possuo cadastro</button> 
+            <button class="botoesPrincipais Enviar" type="button">Enviar Busca</button>
+            <button class="botoesPrincipais Cadastro" type="button">Já possuo cadastro</button>
         </section>
     </main>
     <section class="Dicas">

@@ -7,19 +7,110 @@ body {
     font-size: 14px;
 }
 
-.header{
+.navegador {
+    grid-area:navegador;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 50px;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+#achadosEPerdidos {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+#comoFunciona {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 235px;
+}
+
+#suporte {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 380px;
+}
+
+a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #4ea3d9;
+}
+
+.barra-navegacao img {
+    width: 50px;
+    align-content: center;
+}
+
+.cabecalho .barra-navegacao a {
+    margin: 10px;
+
+}
+
+.form-control {
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    font-size: 15px;
+    height: 35px;
+}
+
+
+.barra-pesquisa {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: -10px;
+    margin-right: 15px;
+
+}
+
+.btn{
+    color: #6c757d;
+    background-color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 1px 30px;
+    margin-left: 10px;
+    border: 1px solid #6c757d;
+    border-radius: 4px;
+
+}
+
+.btn:hover {
+    color: #F0F0F0;
+    background-color: gray;
+}
+
+
+
+.header {
     width: 100%;
     position: static;
     opacity: 1;
 }
 
-.Main{
+.Main {
     display: flex;
     gap: 25px;
-    justify-content:  center;
+    justify-content: center;
 }
 
-.Titulo{
+.Titulo {
     color: #1B62BF;
     font-weight: Bolder;
     font-size: 40px;
@@ -27,7 +118,7 @@ body {
     margin-bottom: 0px;
 }
 
-.Subtitulo{
+.Subtitulo {
     color: black;
     margin-top: 10px;
     padding-top: -10px;
@@ -35,37 +126,37 @@ body {
     text-align: center;
 }
 
-.Foto{
+.Foto {
     box-shadow: 3px 1px 2px lightgray;
     max-width: 430px;
 }
 
-p{
+p {
     left: 150px;
     margin: 0px;
     font-size: 25px;
     text-align: center;
 }
 
-.Formulario{
+.Formulario {
 
     margin: 0%;
     color: #909497;
 
 }
 
-input{
+input {
     font-size: 120%;
     padding-left: 5%;
     display: block;
 }
 
-.NomePet{
+.NomePet {
     height: 45px;
     width: 275px;
 }
 
-.NomeTutor{
+.NomeTutor {
     height: 45px;
     width: 275px;
     position: relative;
@@ -73,7 +164,7 @@ input{
     left: 280px;
 }
 
-.TipoPet{
+.TipoPet {
     height: 45px;
     width: 275px;
     font-size: 120%;
@@ -83,7 +174,7 @@ input{
     color: #909497;
 }
 
-.Raca{
+.Raca {
     height: 45px;
     width: 275px;
     position: relative;
@@ -91,26 +182,26 @@ input{
     left: 280px;
 }
 
-.Email{
+.Email {
     height: 45px;
     width: 550px;
     position: relative;
     top: -40px;
-    
+
 }
 
-.Telefone{
+.Telefone {
     height: 45px;
     width: 275px;
     position: relative;
     top: -20px;
 }
 
-input[type="file"]{
+input[type="file"] {
     display: none;
 }
 
-label{
+label {
     font-size: 15px;
     color: black;
     background-color: lightgray;
@@ -123,19 +214,19 @@ label{
     border-radius: 4px;
 }
 
-label:hover{
+label:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
-.Endereco{
+.Endereco {
     height: 45px;
     width: 550px;
     position: relative;
     top: -20px;
 }
 
-.Informacoes{
+.Informacoes {
     height: 90px;
     width: 550px;
     position: relative;
@@ -144,7 +235,7 @@ label:hover{
     align-self: flex-start;
 }
 
-button{
+.botoesPrincipais {
     height: 10%;
     position: relative;
     top: 15px;
@@ -152,13 +243,13 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.botoesPrincipais:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 
-.Enviar{
+.Enviar {
     background-color: #4EA4D9;
     color: white;
     font-size: 19px;
@@ -168,7 +259,7 @@ button:hover{
     border-radius: 4px;
 }
 
-.Cadastro{
+.Cadastro {
     background-color: lightgray;
     left: 13%;
     font-size: 18px;
@@ -178,15 +269,15 @@ button:hover{
     border-radius: 4px;
 }
 
-.tituloDicas{
+.tituloDicas {
     text-align: center;
     position: relative;
-    top:35px;
+    top: 35px;
     font-weight: bolder;
     font-size: 30px;
 }
 
-.containerDicas{
+.containerDicas {
     background-color: whitesmoke;
     display: block;
     position: relative;
@@ -195,56 +286,58 @@ button:hover{
 
 }
 
-.imagemDica{
+.imagemDica {
     height: 350px;
     position: relative;
 }
 
-#imagem1{
+#imagem1 {
     right: 40px;
 }
 
-#imagem3{
+#imagem3 {
     left: 40px;
 
 }
 
 
 @media (max-width: 600px) {
-    .Main{
+    .Main {
         flex-direction: column;
         align-items: center;
     }
 
-    .tituloDicas{
+    .tituloDicas {
         text-align: center;
         position: relative;
     }
 
-    .containerDicas{
+    .containerDicas {
         display: block;
         position: relative;
         top: 30px;
     }
 
-    .imagemDica{
+    .imagemDica {
         height: 350px;
         position: relative;
     }
-    
-    #imagem1{
-        right:0px;
+
+    #imagem1 {
+        right: 0px;
     }
 
-    #imagem2{
+    #imagem2 {
         top: 10px;
         left: 0px;
     }
-    
-    #imagem3{
+
+    #imagem3 {
         top: 20px;
         left: 0px;
     }
+
+    .barra-pesquisa-nav{
+        margin-top: 100px;
+    }
 }
-
-

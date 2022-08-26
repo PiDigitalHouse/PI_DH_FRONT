@@ -11,7 +11,7 @@ border: none;
 }
 /* Imagem de fundo */
 body{
-    background-image: url('../img/49_animais_domesticos_definicao_e_especies_23221_orig.jpg');
+    background-image: url('/LoginFront/img/background.png');
     background-size: cover;
 }
 /* Tirar bordas das barras */
@@ -24,7 +24,7 @@ a, label {
 }
 /* Quando você passar o mouse em cima da palavra ela fica da cor escolhida "AZUL" */
 a:hover{
-    color: blue;
+    color: #4ea3d9;
 }
 
 /* Container login */
@@ -86,13 +86,13 @@ input[type="submit"]{
     border-radius: 20px;
     margin-top: 30px;
     color: #FFFF;
-    background-color: aquamarine;
+    background-color: #4ea3d9;
     cursor: pointer;
   }
 
   /*O botão altera a cor quando selecionado */
   input[type="submit"]:hover{
-    background-color: rgb(4, 146, 171);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: .4s;
   }
 
@@ -118,6 +118,9 @@ input[type="submit"]{
   .fa-facebook-f{
     background-color: rgb(7, 7, 187);
   }
+  .fa-facebook-f:hover, .fa-google:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
   .fa-google{
     background-color: rgb(223, 6, 49);
   }
@@ -126,6 +129,10 @@ input[type="submit"]{
 
   #register-container p{
     margin-bottom: 10px;
+  }
+  
+  a{
+    text-decoration: none;
   }
 
 

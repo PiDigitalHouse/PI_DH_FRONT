@@ -19,13 +19,12 @@ body {
 }
 
 .cabecalho {
-    grid-area: cabecalho;
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
     padding: 10px;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .cabecalho .barra-navegacao img {
@@ -68,22 +67,24 @@ body {
 }
 .achei-perdi-pet .card {
     position: absolute;
+    top:0px;
     flex-direction: column;
-    width: 500px;
+    width: 400px;
     margin-left: 150px;
-    height: 350px;
+    height: 300px;
     align-items: center;
-    font-size: 40px;
     background-color: rgba(222, 222, 222, .75);
-
 }
 
 .achei-perdi-pet .card .botao {
+    display: flex;
+    align-items: center ;
     margin: 30px;
-    font-size: 30px;
+    font-size: 24px;
+    text-align: center;
     padding: 10px;
-    text-decoration: none;
-    width: 300px;
+    width: 200px;
+    height: auto;
     text-align: center;
 }
 
@@ -93,7 +94,7 @@ body {
 
 .achei-perdi-pet .card h1 {
     font-weight: 900;
-    margin: 20px;
+    margin: 16px;
 }
 .como-funciona {
     display: flex;
@@ -102,8 +103,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #4ea3d9;
-    padding-top: 300px;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 .como-funciona h1 {
@@ -139,7 +139,7 @@ body {
 }
 
 .pets-perdidos .carrossel-imagens img {
-    width: 600px;
+    width: 400px;
     margin-bottom: 30px;
 }
 
@@ -171,7 +171,7 @@ body {
     margin: 10px;
     font-size: 20px;
     font-style: italic;
-
+    text-align: center;
 }
 
 .pets-encontrados {
@@ -182,19 +182,20 @@ body {
 .pets-encontrados h1 {
     font-weight: 900;
     font-size: 40px;
-    margin: 10px;
 }
 
 .pets-encontrados .carrossel-imagens {
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: stretch;
     align-items: center;
-    margin: 40px;
+    margin-top: 30px;
 }
 
 .pets-encontrados .carrossel-imagens img {
-    width: 350px;
+    width: 300px;
+    margin: 10px;
 }
 
 .amplie-nossa-rede {
@@ -206,15 +207,15 @@ body {
 }
 
 .amplie-nossa-rede img {
-    max-width: 800px;
+    max-width: 600px;
 }
 
 .amplie-nossa-rede .cadastro-email {
     font-weight: 900;
     font-size: 40px;
-    margin: 10px;
+    margin: 40px;
     background-color: rgb(242, 69, 29, 0.9);
-    padding: 100px 80px;
+    padding: 80px 20px;
     border-radius: 40px;
 }
 
@@ -235,24 +236,21 @@ body {
     padding: none;
     width: 700px;
 }
-
+.form-control{
+    margin: 0px;
+}
 .mais-informacoes{
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
     margin: 10px;
-    
 }
 .mais-informacoes .texto h1{
     font-weight: 900;
     font-size: 30px;
+}
 
-}
-.mais-informacoes .quem-somos-footer{
-    width: 300px;
-    padding: 10px;
-}
 .mais-informacoes .quem-somos-footer a {
     display: block;
 }
@@ -262,7 +260,7 @@ body {
 .mais-informacoes .quem-somos-footer h1 {
     font-size: 24px;
 }
-.mais-informacoes .como-funciona-footer{
+.mais-informacoes .quem-somos-footer, .como-funciona-footer{
     width: 400px;
 }
 .mais-informacoes .como-funciona-footer a {

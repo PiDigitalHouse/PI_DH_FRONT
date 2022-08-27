@@ -29,9 +29,8 @@ input,label{
     /* Corpo do site, joga as informações pra baixo e adiciona a imagem*/
 body{
     padding-top: 5vh;
-    background-image: url('../img/cao.perdido.jpg');
+    background-image: url('/CadastroFront/img/background.png');
     background-size: cover;
-    background-position-y: -150px;
     }
 
   

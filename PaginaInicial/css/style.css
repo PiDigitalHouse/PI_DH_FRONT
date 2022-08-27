@@ -75,6 +75,9 @@ body {
     align-items: center;
     background-color: rgba(222, 222, 222, .75);
 }
+.achei-perdi-pet .card a {
+    text-decoration: none;
+}
 
 .achei-perdi-pet .card .botao {
     display: flex;
@@ -248,7 +251,7 @@ body {
 }
 .mais-informacoes .texto h1{
     font-weight: 900;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .mais-informacoes .quem-somos-footer a {
@@ -292,4 +295,23 @@ body {
     border-radius: 4px;
 }
 
+.rodape {
+    background: #4ea3d9;
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rodape h3 {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.rodape .texto-rodape {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
    

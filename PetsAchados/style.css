@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    font-size: 14px;
+}
+
+.navegador {
+    grid-area:navegador;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 50px;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+#achadosEPerdidos {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+#comoFunciona {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 235px;
+}
+
+#suporte {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 380px;
+}
+
+a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #4ea3d9;
+}
+
+.barra-navegacao img {
+    width: 50px;
+    align-content: center;
+}
+
+.cabecalho .barra-navegacao a {
+    margin: 10px;
+
+}
+
+.form-control {
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    font-size: 15px;
+    height: 35px;
+}
+
+
+.barra-pesquisa {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: -10px;
+    margin-right: 15px;
+
+}
+
+.btn{
+    color: #6c757d;
+    background-color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 1px 30px;
+    margin-left: 10px;
+    border: 1px solid #6c757d;
+    border-radius: 4px;
+
+}
+
+.btn:hover {
+    color: #F0F0F0;
+    background-color: gray;
+}
+
+
+
+.header {
+    width: 100%;
+    position: static;
+    opacity: 1;
+}
+
+.Main {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.Titulo {
+    color: #1B62BF;
+    font-weight: Bolder;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.Subtitulo {
+    color: black;
+    margin-top: 10px;
+    padding-top: -10px;
+    font-weight: 1;
+    text-align: center;
+}
+
+.Foto {
+    position:relative;
+    margin-top: 18px;
+    box-shadow: 3px 1px 2px lightgray;
+    max-width: 550px;
+}
+
+.previa {
+    left: 150px;
+    margin: 0px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.Formulario {
+    margin: 0%;
+    color: #909497;
+
+}
+
+
+input {
+    font-size: 120%;
+    padding-left: 5%;
+    display: block;
+}
+
+.codigo{
+    font-size: 16px;
+    color: black;
+    width: 500px;
+    text-align: center;
+}
+
+.codigoPet {
+    height: 45px;
+    width: 255px;
+}
+
+.botaoCodigo {
+    height: 45px;
+    width: 255px;
+    position: relative;
+    top: -45px;
+    left: 260px;
+    text-align: center;
+    padding-right: 40px;
+    box-shadow: 3px 1px 2px lightgray;
+}
+.semCodigo{
+    font-weight: normal;
+    color: black;
+    width: 500px;
+    text-align: center;
+}
+#sc1{
+    color:#4ea3d9;
+    font-size: 25px;
+    position: relative;
+    margin-top: -20px;
+}
+#sc2{
+    font-size: 16px;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.TipoPet {
+    height: 45px;
+    width: 255px;
+    font-size: 120%;
+    padding-left: 5%;
+    position: relative;
+    top: -20px;
+    color: #909497;
+}
+
+.Telefone {
+    height: 45px;
+    width: 255px;
+    position: relative;
+    top: -65px;
+    left: 270px;
+}
+
+.Endereco {
+    height: 45px;
+    width: 525px;
+    position: relative;
+    top: -40px;
+
+}
+
+.seuNome{
+    height: 45px;
+    width: 275px;
+    position: relative;
+    top: -20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    font-size: 15px;
+    color: black;
+    background-color: lightgray;
+    padding: 13px 15px;
+    position: relative;
+    top: -53px;
+    left: 300px;
+    box-shadow: 3px 1px 2px lightgray;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+label:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.Email {
+    height: 45px;
+    width: 525px;
+    position: relative;
+    top: -20px;
+}
+
+.Informacoes {
+    height: 90px;
+    width: 525px;
+    position: relative;
+    top: -5px;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.botoesPrincipais {
+    height: 10%;
+    position: relative;
+    top: 15px;
+    border: 0;
+    cursor: pointer;
+}
+
+.botoesPrincipais:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.Enviar {
+    background-color: #4EA4D9;
+    color: white;
+    font-size: 19px;
+    height: 50px;
+    box-shadow: 3px 1px 2px lightgray;
+    left: 100px;
+    border-radius: 4px;
+}
+
+.Cadastro {
+    background-color: lightgray;
+    left: 13%;
+    font-size: 18px;
+    height: 50px;
+    left: 120px;
+    box-shadow: 3px 1px 2px gray;
+    border-radius: 4px;
+}
+
+.tituloDicas {
+    text-align: center;
+    position: relative;
+    top: 35px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.containerDicas {
+    background-color: whitesmoke;
+    display: block;
+    position: relative;
+    top: 20px;
+    text-align: center;
+
+}
+
+.imagemDica {
+    height: 350px;
+    position: relative;
+}
+
+#imagem1 {
+    right: 40px;
+}
+
+#imagem3 {
+    left: 40px;
+
+}
+
+
+@media (max-width: 600px) {
+    .Main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tituloDicas {
+        text-align: center;
+        position: relative;
+    }
+
+    .containerDicas {
+        display: block;
+        position: relative;
+        top: 30px;
+    }
+
+    .imagemDica {
+        height: 350px;
+        position: relative;
+    }
+
+    #imagem1 {
+        right: 0px;
+    }
+
+    #imagem2 {
+        top: 10px;
+        left: 0px;
+    }
+
+    #imagem3 {
+        top: 20px;
+        left: 0px;
+    }
+
+    .barra-pesquisa-nav{
+        margin-top: 100px;
+    }
+}

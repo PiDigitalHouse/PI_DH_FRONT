@@ -25,25 +25,33 @@
                     <input class="form-control" type="search" placeholder="Pesquisa Pet" aria-label="Search">
                     <button class="btn" type="submit">Procurar</button>
                 </form>
-            </div>   
+            </div>
     </nav>
 
     <header class="header">
-        <h1 class="Titulo">ACHE MEU PET</h1>
-        <h2 class="Subtitulo">Você recuperará seu amiguinho bem rápido! Coloque todas as informações solicitadas e não
-            economize nos detalhes!</h2>
+        <h1 class="Titulo">Obrigada por me encontrar! </h1>
+        <h3 class="Subtitulo">Graças a sua ajuda, minhas chances de encontrar meu lar estão bem mais altas!</h2>
     </header>
 
     <main class="Main">
         <div>
             <img class="Foto" src="Imagens/anuncio.png">
-            <p>Prévia do anúncio</p>
+            <p class="previa">Prévia do anúncio</p>
         </div>
 
         <section class="Formulario">
+            <p class="codigo">Veja se eu possuo um tag de identificação, insira o código aqui e contate meu dono
+                imediatamente, obrigado!</p>
             <form action="">
-                <input class="NomePet" type="Name" name="NomePet" placeholder="Nome do Pet" autocomplete="off">
-                <input class="NomeTutor" type="Name" name="NomeTutor" placeholder="Nome do Tutor" autocomplete="off">
+                <input class="codigoPet" type="text" name="codigoPet" placeholder="Insira o Código" autocomplete="off">
+                <input class="botaoCodigo" type="button" name="botaoCodigo" value="Enviar Código">
+            </form>
+
+            <h2 class="semCodigo" id="sc1">Sem tag?</h2>
+            <h3 class="semCodigo" id="sc2">Não há problema, faça um anúncio rapído por aqui e me ajude a encontrar meu
+                dono</h3>
+
+            <form action="">
                 <select class="TipoPet" name="Tipo">
                     <option selected disabled>Tipo de Pet</option>
                     <option value="Cachorro">Cachorro</option>
@@ -54,18 +62,15 @@
                     <option value="Cobra">Cobra</option>
                     <option value="Porco">Porco</option>
                 </select>
-                <input class="Raca" type="text" name="Raca" placeholder="Qual a raça? (Opcional)" autocomplete="off">
-                <input class="Email" type="email" name="Email" placeholder="Digite seu e-mail" autocomplete="off">
-                <input class="Telefone" type="tel" name="Telefone" placeholder="Telefone para contato"
-                    autocomplete="off">
+                <input class="Telefone" type="tel" name="Telefone" placeholder="Telefone para contato" autocomplete="off">
+                <input class="Endereco" type="Name" name="Endereco" placeholder="Local em que o pet foi encontrado" autocomplete="off">
+                <input class="seuNome" type="text" name="Raca" placeholder="Seu Nome" autocomplete="off">
                 <div>
                     <label for="Imagem">Escolher Imagem do Pet</label>
                     <input class="Imagem" accept="image/*" type="file" name="Imagem" id="Imagem">
                 </div>
-                <input class="Endereco" type="Name" name="Endereco" placeholder="Endereço em que foi visto por último"
-                    autocomplete="off">
-                <input class="Informacoes" type="text" name="Informacoes" placeholder="Informações Adicionais"
-                    autocomplete="off">
+                <input class="Email" type="email" name="Email" placeholder="Digite seu e-mail" autocomplete="off">
+                <input class="Informacoes" type="text" name="Informacoes" placeholder="Informações Adicionais"autocomplete="off">
             </form>
 
             <button class="botoesPrincipais Enviar" type="button">Enviar Busca</button>

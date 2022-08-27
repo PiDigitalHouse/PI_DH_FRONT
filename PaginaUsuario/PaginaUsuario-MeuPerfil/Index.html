@@ -79,48 +79,58 @@
                 <h1>Oi, Usuário</h1>
                 <a class="navbar-brand" href="#">Minhas Mensagens</a>
             </div>
-            <div class="meu-perfil">
-                <div>
-                    <h1>Meu Perfil</h1>
-                    <h2>Gerenciar e proteger sua conta</h2>
-                </div>
-                <div>
-                    <table>
-                        <tr>
-                            <td class="left">Nome do Usuário</td>
-                            <td class="right">nomeusuario</td>
-                        </tr>
-                        <tr>
-                            <td class="left">CPF</td>
-                            <td class="right">0*********8</td>
-                        </tr>
-                        <tr>
-                            <td class="left">Nome</td>
-                            <td class="left">Nome Usuário</td>
-                        </tr>
-                        <tr>
-                            <td class="left">E-mail</td>
-                            <td class="left">nome.usuario@mail.com
-                                <a class="navbar-brand azul" href="#">Trocar</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="left">Telefone</td>
-                            <td class="left">*********66
-                                <a class="navbar-brand azul" href="#">Trocar</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <form>
-                                    <label for="diaa">Data de Nascimento:</label>
-                                </form>
-                            </td>
-                            <td>
-                                <input type="date" id="diaa" name="diaa">
-                            </td>
-                        </tr>
-                    </table>
+            <div>
+                <div class="meu-perfil">
+                    <div>
+                        <div class="meu-perfil-titulo">
+                            <h1>Meu Perfil</h1>
+                            <h2>Gerenciar e proteger sua conta</h2>
+                        </div>
+                        <table>
+                            <tr>
+                                <td >Nome do Usuário</td>
+                                <td >nomeusuario</td>
+                            </tr>
+                            <tr>
+                                <td >CPF</td>
+                                <td >0*********8</td>
+                            </tr>
+                            <tr>
+                                <td >Nome</td>
+                                <td ><input type="name" id="name" placeholder="Nome Usuário" name="nome">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td >E-mail</td>
+                                <td ><input type="email" id="email" placeholder="nome.usuario@mail.com"
+                                        name="email">
+                                    <a class="navbar-brand azul" href="#">Trocar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left">Telefone</td>
+                                <td class="left">
+                                    <input type="phone" id="telefone" placeholder="*********66" name="Telefone">
+                                    <a class="navbar-brand azul" href="#">Trocar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form>
+                                        <label for="diaa">Data de Nascimento:</label>
+                                    </form>
+                                </td>
+                                <td>
+                                    <input type="date" id="diaa" name="diaa">
+                                </td>
+                            </tr>
+                        </table>
+                        <a href="#" class="botao">Salvar</a>
+                    </div>
+                    <div class="usuario-foto">
+                        <img src="./img/imagem-usuario.png">
+                        <a>Trocar foto de Perfil</a>
+                    </div>
                 </div>
             </div>
         </content>

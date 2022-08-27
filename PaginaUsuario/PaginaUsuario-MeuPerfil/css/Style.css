@@ -192,71 +192,66 @@ li {
     max-width: 120px;
     margin-top: 20px;
 }
-
-
-.conteudo-principal {
-    background: #ffffff;
-    grid-area: conteudo-principal;
-    margin: 10px;
-}
-.conteudo-principal .usuario{
-    display: flex;
-    justify-content: space-between;
-}
-.conteudo-principal .usuario h1{
-    font-size: 20px;
-    font-weight: bold;
-}
-
 .barra-lateral .selecionado{
     font-size: 20px;
     font-weight: bold;
 }
 
-.conteudo-principal .pets-usuario{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.conteudo-principal .pets-usuario .conteudo{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    background-color:#4ea4d9bb;
+.conteudo-principal {
+    background: #ffffff;
+    grid-area: conteudo-principal;
     margin: 10px;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.conteudo-principal .pets-usuario .conteudo .informacoes{
     display: flex;
-    align-content: center;
-    align-items: center;
-}
-.conteudo-principal .pets-usuario .conteudo .informacoes img{
-    border-radius: 50%;
-    max-width: 150px;
-    padding: 10px;
-}
-.conteudo-principal .pets-usuario .conteudo .informacoes h1{
-    font-size: 24px;
-}
-.conteudo-principal .pets-usuario .botoes{
-    display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 20px;
 }
-.conteudo-principal .pets-usuario .botoes .botao-alert , .botao-disabled{
-    margin-bottom: 10px ;
+.conteudo-principal .usuario{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.conteudo-principal .usuario h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.conteudo-principal .meu-perfil-titulo h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.conteudo-principal .meu-perfil-titulo h2{
+    font-size: 16px;
+    font-weight: bold;
+}
+.conteudo-principal .meu-perfil{
+    background-color: #ececec;
+    border-radius: 4px;
+    padding: 20px;
+    background-size: auto;
+    display: flex;
+    align-items:center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.conteudo-principal .meu-perfil .meu-perfil-titulo{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.conteudo-principal .meu-perfil .usuario-foto{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.conteudo-principal .meu-perfil .usuario-foto img{
+    max-width: 120px;
+}
+.conteudo-principal .meu-perfil label{
+    margin-right: 100px;
 }
 
-.conteudo-principal .pets-usuario .botoes .botao-alert:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
+
 .rodape {
     background: #4ea3d9;
     grid-area: rodape;

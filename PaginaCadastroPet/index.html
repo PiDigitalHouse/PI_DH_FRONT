@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre seu Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1><center>Cadastre seu Pet</center></h1>
+        <br>
+        <form id="register">
+            <form action="">
+                <select class="TipoPet" name="Tipo">
+                    <option selected disabled>Tipo de Pet</option>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Coelhsno">Coelho</option>
+                    <option value="Furão">Furão</option>
+                    <option value="Passáro">Passáro</option>
+                    <option value="Cobra">Cobra</option>
+                    <option value="Porco">Porco</option>
+                </select>        
+<div class="Nome">
+    <label for="name">Nome</label>
+    <input type="text" name="name" id="name" placeholder="Digite o nome do seu Pet">
+</div>
+<div class="Raça">
+    <label for="raça">Raça do Pet</label>
+    <input type="text" name="text" id="text" placeholder="Digite a raça do seu Pet">
+</div>
+<div class="Descrição">
+    <label for="descrição">Descrição do Pet</label>   
+</div>
+<div class="teste2">
+    <label for="Caixa de Descrição"></label>
+<textarea id="teste2" name="Caixa de Descrição" rows="10" cols="65" style="border:1px solid"></textarea>    
+</div>
+<div>
+    <label style="background-color:rgb(255, 255, 255);"for="Imagem">Adicione as imagens do seu Pet </label>
+    <input class="Imagem" accept="image/*" type="file" name="Imagem" id="Imagem" multiple="multiple" style="border:none">
+    </div>
+    <button class="button">
+        <input type="submit" id="submit" value="Salvar">
+    </button>
+    </form>
+    </div>
+</body>
+</html>

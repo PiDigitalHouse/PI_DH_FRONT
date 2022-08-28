@@ -1,0 +1,63 @@
+/* Geral */
+
+/* Formatando as informações */
+
+*{
+    margin: 3px;
+    padding: 3px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    border-style: none;
+}
+
+/* Alterando as posições e largura das linhas*/
+  
+  input,label{
+    display: block;
+    width: 100%;
+    }
+
+/* Formatando a caixa de descrição */
+
+    .teste2{
+        margin-top: -15px;
+    }
+
+ /* forma */
+
+   /* Formatando a caixa com as informações do novo usuario e movendo para o lado*/
+   #container{
+      margin-top: 100px;
+      width: 500px;
+      margin-left: 750px;           
+      border-radius: 50px;  
+    }
+
+/* Adicionando a imagem no fundo do campo de trabalho */
+
+div#container {  
+  background-image: url(img/Semtítulo.jpg); 
+  background-size: cover;  
+  border-style:solid ; 
+}
+
+/* Ajustando o botão */
+.button{  
+  width: 150px; 
+  border-radius: 12px; 
+  border: none;
+  display: inline-block;
+
+}
+
+/* Ajustando a imagem */
+.Imagem{
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  }
+
+/* Ajustando a borda das caixas */
+input{
+  border-style:solid;
+  }

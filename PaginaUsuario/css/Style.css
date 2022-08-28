@@ -238,7 +238,8 @@ li {
 }
 .conteudo-principal .pets-usuario .conteudo .informacoes img{
     border-radius: 50%;
-    max-width: 150px;
+    width: 150px;
+    height: 150px;
     padding: 10px;
 }
 .conteudo-principal .pets-usuario .conteudo .informacoes h1{

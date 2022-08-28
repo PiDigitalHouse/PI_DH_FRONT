@@ -182,12 +182,12 @@ input {
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    margin: 40px;
+    margin: 20px;
     flex-wrap: wrap;
 }
 
 .conteudo-principal .carrossel-imagens img {
-    width: 400px;
+    width: 300px;
     margin-bottom: 30px;
 }
 
